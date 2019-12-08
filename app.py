@@ -180,7 +180,6 @@ def dashboard():
         msg = "No Articles Found"
         return render_template("dashboard.html", msg=msg)
     # Close connection
-    cur.close()
 
 
 # Article Form Class
