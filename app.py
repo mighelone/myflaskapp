@@ -18,16 +18,10 @@ from functools import wraps
 
 app = Flask(__name__)
 
-# Config MySQL
+# Config SQLalchemy
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///app.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-# app.config['MYSQL_HOST'] = 'localhost'
-# app.config['MYSQL_USER'] = 'root'
-# app.config['MYSQL_PASSWORD'] = '123456'
-# app.config['MYSQL_DB'] = 'myflaskapp'
-# app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
-# init MYSQL
-# mysql = MySQL(app)
+
 db = SQLAlchemy(app)
 
 
